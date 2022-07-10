@@ -4,8 +4,8 @@ using Ardenfall.Utility;
 
 namespace ArdenfallEditor.Utility
 {
-    [CustomEditor(typeof(MossPainter))]
-    public class MossPainterEditor : Editor
+    [CustomEditor(typeof(GrassPainter))]
+    public class GrassPainterEditor : Editor
     {
         private float brushSize = 2;
         private float brushAngleAllowance = 40;
@@ -16,7 +16,7 @@ namespace ArdenfallEditor.Utility
         private bool setBrushAngle;
         private Vector3 brushDirection;
 
-        private MossPainter Painter => target as MossPainter;
+        private GrassPainter Painter => target as GrassPainter;
 
         private void OnEnable()
         {
