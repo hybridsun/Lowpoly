@@ -9,9 +9,9 @@ using Unity.Entities.UniversalDelegates;
 
 namespace Ardenfall.Utility
 {
-    public class MossPainter : MonoBehaviour
+    public class GrassPainters : MonoBehaviour
     {
-        [SerializeField] private float mossDistance = 0.01f;
+        [SerializeField] private float grassDistance = 0.01f;
 
         [SerializeField, HideInInspector]
         private List<Vector3> generatedVertices = new List<Vector3>();
